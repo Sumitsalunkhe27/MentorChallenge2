@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Hanken+Grotesk">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      
+      margin: 0px;
+      padding: 0px;
+      
+    }
+    
+    div.container
+    {
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+
+    }
+    
+    div.first{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 50vh;
+      width: 375px;
+      background-color: hsl(241, 81%, 54%);
+      border-radius: 0px 0px 30px 30px;
+      
+      color: hsl(241, 100%, 89%);
+    }.
+    #item1{
+      font-size: 22px;
+
+    }
+    #item2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      width: 180px;
+      height: 180px;
+      background-color: hsla(256, 72%, 46%, 1);
+      box-shadow: 0px 10px 30px hsla(256, 72%, 46%, 1);
+      
+    }
+    #item2 h1{
+      font-size: 70px;
+    }
+    #item3p{
+      box-sizing: border-box;
+      width: 200px;
+      margin: 0px 20px;
+      text-align: center;
+      
+      
+    }
+    #item3 h2{
+    } h2,h1{
+      color: white;
+    }
+    
+    div.second{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-evenly;
+      padding: 0px 25px;
+      height: 50vh;
+      width: 375px !important;
+      box-shadow: 100px;
+      
+      
+    }
+    h3{
+      align-items: center;
+      display: flex;
+      background-color: white !important;
+      font-size: 22px;
+    }
+    .box{
+      align-items: center;
+      background-color: aqua;
+      height: 13%;
+    }
+    img{
+      padding: 0px 5px;
+    }
+    .black{
+      display: inline;
+      font-weight: 700;
+    }
+    li{
+      padding: 0px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8px;
+    }
+    #box3:first-child{
+    color: red !important;
+    }
+    
+    button{
+      color: white !important;
+      font-size: 18px;
+      background-color: rgb(83, 83, 191) !important;
+      border-radius: 20px;
+      border: none;
+    }
+    button:hover{
+      background-color: rgb(65, 65, 160) !important;
+    }
+    #box2{ background-color: rgb(237, 230, 230);}
+    #box3{background-color: rgb(237, 237, 212);}
+    #box4{background-color: rgb(215, 243, 215);}
+    #box5{background-color: rgb(242, 221, 243);}
+    #t1{
+      display: inline-block;
+      color: red;
+      font-size: larger;
+      font-weight: 530;
+    }
+    #t2{
+      display: inline-block;
+      color: rgb(204, 204, 10);
+      font-size: larger;
+      font-weight: 600;
+    }
+    #t3{
+      display: inline-block;
+      color: rgb(33, 200, 33);
+      font-size: larger;
+      font-weight: 530;
+    }
+    #t4{
+      display: inline-block;
+      color: rgb(94, 6, 182);
+      font-size: larger;
+      font-weight: 530;
+    }
+
+    @media only screen and (min-width: 750px) {
+      .first,.second{
+        height: 450px !important;
+        
+        border-radius: 30px !important;
+      }
+      .second{
+        
+        box-shadow: 10px 10px 20px rgb(198, 193, 193);
+        border-radius: 30px 30px 30px 0px !important;
+        
+        
+      }
+    }
+
+
+    
+
+
+
+    .attribution { font-size: 18px; text-align: center; margin: 10px 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="first">
+    
+    <p id="item1">
+
+      Your Result
+    </p>
+    <div id="item2">
+
+      <h1>76</h1>
+      of 100
+    </div>
+    <p id="item3">
+
+      <h2>Great</h2>
+      <p id="item3p">
+
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </p>
+  </div>
+  
+
+
+
+  <div class="second">
+    
+    <h3 class="box" id="box1">
+
+      Summary
+    </h3>
+
+    <li class="box" id="box2">
+
+      <div><img src="./assets/images/icon-reaction.svg" alt=""><p id="t1">Reaction</p></div>
+      <div>  <div class="black"> 80</div> / 100</div>
+    </li>
+    <li class="box" id="box3">
+
+      <div><img src="./assets/images/icon-memory.svg" alt=""><p id="t2">Memory</p></div>
+      <div> <div class="black"> 92</div> / 100</div>
+    </li>
+    <li class="box" id="box4">
+
+      <div><img src="./assets/images/icon-verbal.svg" alt=""><p id="t3">Verbal</p></div>
+      <div> <div class="black"> 61</div> / 100</div>
+    </li>
+    <li class="box" id="box5">
+
+      <div><img src="./assets/images/icon-visual.svg" alt=""><p id="t4">Visual</p></div>
+      <div> <div class="black"> 72</div> / 100</div>
+    </li>
+
+    <button class="box" id="box6">
+
+      Continue
+    </button>
+    
+    
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.instagram.com/sumitsalunkhe.me/ "target="_blank">Sumit Salunkhe</a>.
+  </div>
+</body>
+</html>
